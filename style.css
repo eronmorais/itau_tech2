@@ -1,0 +1,35 @@
+body{
+    background-image: url(form.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+ }
+
+h1{
+    text-align:left;
+    font-size: 50px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+form{
+    font-size: 16px;
+    background: rgb(194, 184, 190);
+    max-width: 450px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align:left;
+}
+
+#enviar{
+    background-color: #069;
+    height: 30px;
+    width: 100px;
+    font-weight:lighter;
+    border-radius: 10px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border: 1px solid;
+    color: #FFF;
+    cursor:pointer;
+    text-align: center;
+    margin-left: 90px;
+    margin-top: 10px;    
+}
