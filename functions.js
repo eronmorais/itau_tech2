@@ -1,4 +1,4 @@
-function Enviar() {
+function ValidarDados() {
     if (document.getElementById("nome").value == "" || 
         document.getElementById("cpf").value == "" ||
         document.getElementById("rua").value == "" ||
@@ -9,8 +9,14 @@ function Enviar() {
             return false;
     }
     else{
-        alert("Formulário enviado com sucesso.");
-        return true;
+        if (!ValidarCPF(document.getElementById('cpf').value )) {
+            return false;
+        }
+        else
+        {
+            alert('Formulário enviado com sucesso!');
+            return true;
+        }
     }
 }
 
@@ -61,5 +67,6 @@ function ValidarCPF(c) {
     }
     if (!v) {
         //alert(c + "CPF Válido")
+        return true;
     }
 }
