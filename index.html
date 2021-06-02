@@ -15,7 +15,7 @@
   <body>
     <h1> Faça o seu Cadastro </h1>
 
-    <form name="contact" method="post" data-netlify="true">
+    <form name="contact" method="post" data-netlify="true" onsubmit="return ValidarDados();">
 
       <h2>Dados Pessoais</h2>
       <table cellspacing="10">
@@ -71,7 +71,7 @@
           <td>
             <label for="celular">Celular:</label>
           <td align="left">
-            <input type="tel" id="Celular" placeholder="(99) 9 9999-9999" required>*
+            <input type="tel" id="celular" placeholder="(99) 9 9999-9999" required>*
             </td>  
           </td>
         </tr>
@@ -86,13 +86,13 @@
             <label for="rua">Rua:</label>
           </td>
           <td align="left">
-            <input type="text" name="rua" placeholder="Informe sua rua" required>*
+            <input type="text" id="rua" name="rua" placeholder="Informe sua rua" required>*
           </td>
           <td>
             <label for="numero">Numero:</label>
           </td>
           <td align="left">
-            <input type="text" name="numero" size="6" placeholder="Informe o numero" required>*
+            <input type="text" id="numero" name="numero" size="6" placeholder="Informe o numero" required>*
           </td>
         </tr>
 
@@ -171,7 +171,7 @@
         <tr>
           <td>
             <td align="left">
-              <input type="submit" id="enviar" value="Enviar" class="enviar" onclick="javascript:Enviar();">
+              <input type="submit" id="enviar" value="Enviar" class="enviar">
             </td>
           </td>
         </tr>
