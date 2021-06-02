@@ -14,8 +14,17 @@ function Enviar() {
     }
 }
 
+function replaceAll(string, token, newtoken) {
+    if(token!=newtoken)
+    while(string.indexOf(token) > -1) {
+        string = string.replace(token, newtoken);
+    }
+    return string;
+}
+
 function ValidarCPF(c) {
-    var c = c.replaceAll('.','').replaceAll('-','');
+    var c = replaceAll(c, '.', '')
+    c = replaceAll(c, '-', '');
     var i;
     s = c;
     var c = s.substr(0,9);
