@@ -15,7 +15,6 @@ function Enviar() {
 }
 
 function ValidarCPF(c) {
-    console.log(c)
     var c = c.replaceAll('.','').replaceAll('-','');
     var i;
     s = c;
