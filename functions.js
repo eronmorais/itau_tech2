@@ -43,7 +43,6 @@ function ValidarCPF(c) {
     d1 = 11 - (d1 % 11);
     if (d1 > 9) d1 = 0;
     if (dv.charAt(0) != d1){
-        alert("CPF Inválido")
         v = true;
         return false;
     }
